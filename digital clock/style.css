@@ -1,0 +1,28 @@
+
+#myclock {
+  font-size: 100px;
+  font-family: cursive;
+  display: flex;
+  height: 3em;
+  align-items: center;
+  justify-content: center;
+  color: green;
+}
+
+.buttons {
+  text-align: center;
+}
+
+body{
+  background-color: black;
+}
+
+button {
+  margin: 0 10px;
+  width: 80px;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+  background-color:green;
+  color: yellow;
+}
