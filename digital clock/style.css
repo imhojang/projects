@@ -3,7 +3,7 @@
   margin-top: 100px;
   margin-bottom: 0px;
   font-size: 65px;
-  font-weight: bold;
+  font-weight: 600;
   display: flex;
   height: 3em;
   align-items: center;
@@ -24,8 +24,9 @@
 }
 
 #frame {
+  
   margin: 0 auto;
-  width: 500px;
+  width: 520px;
 }
 
 .buttons {

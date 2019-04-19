@@ -69,7 +69,7 @@ function incH() {
 
 function dispTime() {
   if(ampm == undefined) myclock.innerHTML = padZ(hh) + "&nbsp;:&nbsp;" + padZ(mm) + "&nbsp;:&nbsp;" + padZ(ss);
-  else myclock.innerHTML = padZ(hh) + "&nbsp;:&nbsp;" + padZ(mm) + "&nbsp;:&nbsp;" + padZ(ss) + "&nbsp;" + ampm;
+  else myclock.innerHTML = padZ(hh) + "&nbsp;:&nbsp;" + padZ(mm) + "&nbsp;:&nbsp;" + padZ(ss)  + ampm;
 }
 
 
