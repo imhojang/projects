@@ -65,8 +65,8 @@ var c = "change";
 //그리고 오후 11시 59분이 지나면 오전 12시 00 분 이 된다. 이부분은 해결함.
 function ampmTime() {
   if (hh==11){ c = "change";}
-  if (hh>11 && ampm == undefined){hh= hh-12; x = 1}
-  else if (hh<12 && ampm == undefined){x=0}
+  if (hh>11 && ampm == undefined){if(hh>12) hh= hh-12; else x = 1}
+  else if (hh=<12 && ampm == undefined){x=0}
   else if (hh>11) { if(c=="change") {ampm = ampmArr[x]; x= (x+1)%2; c = "";} }
   if (hh>12) {hh = hh-12;}
   ampm = ampmArr[x];
