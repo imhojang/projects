@@ -1,0 +1,40 @@
+body {
+  background-color: black;
+}
+
+#stopwatch {
+  margin: 0 auto;
+  font-size: 100px;
+  text-align: center;
+  color: white;
+}
+
+.buttons {
+  height: 70px;
+  border: 1px solid;
+  text-align: center;
+}
+#start, #log{
+  width: 200px;
+  height: 60px;
+  color: white;
+  border-radius: 30px;
+  display: inline-block;
+  font-size: 30px;
+  border: none;
+  text-align: center;
+}
+#start {
+
+  background-color: #4CAF50;
+}
+
+#log {
+  background-color: silver;
+}
+
+#timelog {
+  font-size: 30px;
+  text-align: center;
+  color:white;
+}
