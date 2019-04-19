@@ -68,8 +68,8 @@ function incH() {
 }
 
 function dispTime() {
-  if(ampm == undefined) myclock.innerHTML = padZ(hh) + ":" + padZ(mm) + ":" + padZ(ss);
-  else myclock.innerHTML = padZ(hh) + ":" + padZ(mm) + ":" + padZ(ss) + " " + ampm;
+  if(ampm == undefined) myclock.innerHTML = padZ(hh) + "&nbsp;:&nbsp;" + padZ(mm) + "&nbsp;:&nbsp;" + padZ(ss);
+  else myclock.innerHTML = padZ(hh) + "&nbsp;:&nbsp;" + padZ(mm) + "&nbsp;:&nbsp;" + padZ(ss) + "&nbsp;" + ampm;
 }
 
 

@@ -2,8 +2,8 @@
 #myclock {
   margin-top: 100px;
   margin-bottom: 0px;
-  font-size: 70px;
-  font-family: cursive;
+  font-size: 65px;
+  font-weight: bold;
   display: flex;
   height: 3em;
   align-items: center;
@@ -21,7 +21,6 @@
   border-top: none;
   border-bottom: none;
   text-align: center;
-  font-family: cursive;
 }
 
 #frame {
