@@ -8,6 +8,8 @@ var mmUpbtn = document.getElementById('mmUp');
 var myclock = document.getElementById('myclock');
 var startbtn = document.getElementById('start');
 var ampmbtn = document.getElementById('AM-PM');
+var msg = document.getElementById('msg');
+var bli = true;
 
 hhUpbtn.addEventListener("click",incH);
 mmUpbtn.addEventListener("click",incM);
@@ -15,10 +17,27 @@ startbtn.addEventListener("click",start)
 ampmbtn.addEventListener("click",ampmTime)
 
 
+
 dispTime();
+var p = setInterval(blink,500);
+
 
 function start() {
   setInterval(time,1000);
+  clearInterval(p);
+  myclock.style.color = "green"
+  msg.style.color = "green";
+  msg.innerHTML = "\" remember,  good things take time \" </br> &nbsp;";
+}
+
+function blink() {
+  if(bli==true) {
+    myclock.style.color = "green";
+    msg.style.color = "green";
+    bli = false;
+  }
+  else {myclock.style.color = "#153d05"; msg.style.color = "#153d05"; bli = true;}
+
 }
 
 function timeRules () {
@@ -69,7 +88,7 @@ function ampmTime() {
     if(hh>12) {hh= hh-12; x = 1}
     else {x=1;}
   }
-  else if (hh<12 && ampm == undefined){x=0}
+  else if (hh<12 && ampm == undefined){ if(hh==0) {hh= 12; x=0;} else x=0;}
   else if (hh>11) { if(c=="change") {ampm = ampmArr[x]; x= (x+1)%2; c = "";} }
   if (hh>12) {hh = hh-12;}
   ampm = ampmArr[x];
