@@ -21,7 +21,7 @@ function currTime() {
     }
   }
   else if (ampmMode == false) {
-    document.getElementById("AMPM").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+    document.getElementById("AMPM").innerHTML = "&nbsp;";
     hh = today.getHours();
   }
 
@@ -65,7 +65,7 @@ function ampmbtn () {
 
 function dayOrNight () {
   if (day == true) {
-    document.body.style.backgroundColor = "white";
+    document.body.style.backgroundColor = "#b4e3a0";
     day = false;
   }
   else if (day == false) {
