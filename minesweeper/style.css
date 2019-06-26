@@ -1,0 +1,77 @@
+body {
+  background-color: #181818;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+
+#zoom {
+  margin: 0 auto;
+  zoom: 1.7;
+  -moz-transform: scale(1.7);
+  -moz-transform-origin: 800px 0px;
+}
+
+button {
+  background-color: #181818;
+  color: whitesmoke;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+  color: whitesmoke;
+  margin: 20px 0;
+}
+
+td {
+  /* border: 1px solid grey; */
+  width: 14px;
+  height: 14px;
+  text-align: center;
+  font-size: 0px;
+  background: url("sprite100.gif") 0px -39px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td.opened {
+  background: url("sprite100.gif") 0px -23px;
+}
+td.flag {
+  background: url("sprite100.gif") -16px -39px;
+}
+
+td.question {
+  background: url("sprite100.gif") -80px -39px;
+}
+
+tbody {
+  cursor: pointer;
+}
+
+#result {
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+.timer {
+  width: 14px;
+  height: 23px;
+  background: url("sprite100.gif") 0px 0px;
+  display: inline-block;
+}
+h1 {
+  display: inline-block;
+}
+
+#menuboard {
+  margin: 0 auto;
+  width: 165px;
+  text-align: center;
+}
+
+#table {
+  display: inline-block;
+}
